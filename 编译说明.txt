@@ -100,8 +100,9 @@ http://www.scons.org/
 
 编译：
 python /home/kdjie/scons-2.3.1/script/scons platform=linux-gcc
+注：上面的/home/kdjie以实际的目录为准。
 
-在jsoncpp-src-0.5.0/libs/linux-gcc-4.3.3目录下生成
+在jsoncpp-src-0.6.0/libs/linux-gcc-4.3.3目录下生成
 libjson_linux-gcc-4.3.3_libmt.a
 libjson_linux-gcc-4.3.3_libmt.so
 
