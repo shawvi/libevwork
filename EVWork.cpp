@@ -1,4 +1,12 @@
-﻿#include "EVWork.h"
+﻿//============================================================================
+// Name        : EVWork.cpp
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#include "EVWork.h"
 
 using namespace evwork;
 

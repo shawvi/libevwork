@@ -1,3 +1,11 @@
+ï»¿//============================================================================
+// Name        : AsyncWriter.cpp
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
 #include "AsyncWriter.h"
 
 #include "EVWork.h"
@@ -38,7 +46,7 @@ CAsyncWriter::CAsyncWriter()
 : m_bFlushing(false)
 , m_hFlush(this)
 {
-	// Ê¹ÓÃeventfd×÷ÎªÊÂ¼þÍ¨Öª»úÖÆ
+	// ä½¿ç”¨eventfdä½œä¸ºäº‹ä»¶é€šçŸ¥æœºåˆ¶
 	m_fdFlush = eventfd(0, EFD_NONBLOCK);
 	assert(m_fdFlush != -1);
 

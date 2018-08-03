@@ -1,4 +1,12 @@
-﻿#include "ClientConn.h"
+﻿//============================================================================
+// Name        : ClientConn.cpp
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#include "ClientConn.h"
 
 #include "EVWork.h"
 

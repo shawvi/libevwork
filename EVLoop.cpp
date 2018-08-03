@@ -1,4 +1,12 @@
-﻿#include "EVComm.h"
+﻿//============================================================================
+// Name        : EVLoop.cpp
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#include "EVComm.h"
 #include "EVWork.h"
 
 using namespace evwork;

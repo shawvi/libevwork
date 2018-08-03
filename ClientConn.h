@@ -1,4 +1,12 @@
-﻿#pragma once 
+﻿//============================================================================
+// Name        : ClientConn.h
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#pragma once
 
 #include "EVComm.h"
 #include "Buffer.h"

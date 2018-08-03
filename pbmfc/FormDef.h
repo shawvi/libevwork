@@ -1,4 +1,12 @@
-#pragma once 
+ï»¿//============================================================================
+// Name        : FormDef.h
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#pragma once
 
 #include "libevwork/EVComm.h"
 #include "Request.h"
@@ -28,13 +36,13 @@ namespace pb
 	};
 
 
-	// ÀàMFCÏûÏ¢Ó³ÉäÊµÏÖ
+	// ç±»MFCæ¶ˆæ¯æ˜ å°„å®ç°
 
 	struct PHClass{};
 
 	typedef void (PHClass::*TargetFunc)();
 
-	// ²ÉÓÃunionÓÃ·¨ÊµÏÖ²»Í¬µÄĞÎ²ÎµÄº¯Êı×ª»»
+	// é‡‡ç”¨unionç”¨æ³•å®ç°ä¸åŒçš„å½¢å‚çš„å‡½æ•°è½¬æ¢
 	union TargetProc
 	{
 		TargetFunc mf_oo;
@@ -43,7 +51,7 @@ namespace pb
 		void (PHClass::*mf_vcc)(void*, evwork::IConn*);
 	};
 
-	// ½â°ü»ùÀà
+	// è§£åŒ…åŸºç±»
 	class IFromHandle
 	{
 	public:
@@ -52,7 +60,7 @@ namespace pb
 		virtual void destroyFrom(void* p) = 0;
 	};
 
-	// ½â°üÀàÄ£°å
+	// è§£åŒ…ç±»æ¨¡æ¿
 	template<typename TForm>
 	class FormHandleT
 		: public IFromHandle
@@ -77,7 +85,7 @@ namespace pb
 		}
 	};
 
-	// ÏûÏ¢Ó³Éäº¯ÊıÀàĞÍ
+	// æ¶ˆæ¯æ˜ å°„å‡½æ•°ç±»å‹
 	enum FormProcType
 	{
 		fpt_vv,			// void ::()
@@ -85,7 +93,7 @@ namespace pb
 		fpt_vcc,		// void ::(Cmd *, Conn*)
 	};
 
-	// ÏûÏ¢Ó³Éä¼ÇÂ¼¶¨Òå
+	// æ¶ˆæ¯æ˜ å°„è®°å½•å®šä¹‰
 	struct FormEntry
 	{
 		uint32_t m_uCmd;
@@ -97,7 +105,7 @@ namespace pb
 		PHClass* m_pObj;
 	};
 
-	// ÏûÏ¢Ó³Éäºê
+	// æ¶ˆæ¯æ˜ å°„å®
 
 	#define DECLARE_PB_FORM_MAP \
 		static pb::FormEntry *getFormEntries(); \

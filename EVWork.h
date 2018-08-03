@@ -1,4 +1,12 @@
-﻿#pragma once 
+﻿//============================================================================
+// Name        : EVWork.h
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#pragma once
 
 #include "EVComm.h"
 #include "Logger.h"
@@ -66,6 +74,6 @@ namespace evwork
 		static boost::thread_specific_ptr<CThreadEnv> m_tssEnv;
 	};
 
-	#define LOG(l,f,...) CEnv::getThreadEnv()->getLogger()->log(l, f, __VA_ARGS__)
+	#define LOG(l,f,...) CEnv::getThreadEnv()->getLogger()->log(l, f, ##__VA_ARGS__)
 
 }

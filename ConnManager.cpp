@@ -1,4 +1,12 @@
-﻿#include "ConnManager.h"
+﻿//============================================================================
+// Name        : ConnManager.cpp
+// Author      : kdjie
+// Version     : 1.0
+// Copyright   : @2015
+// Description : 14166097@qq.com
+//============================================================================
+
+#include "ConnManager.h"
 
 #include "EVWork.h"
 
